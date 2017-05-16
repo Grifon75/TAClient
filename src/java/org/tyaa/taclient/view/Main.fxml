@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="pane" stylesheets="@../resources/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.tyaa.taclient.viewcontroller.MainController">
+    <children>
+    <VBox spacing="20.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+      <children>
+            <AnchorPane styleClass="pane">
+               <children>
+                  <Label styleClass="caption" text="TradingActivity Client" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label text="Powered by JavaFX 8" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="10.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane>
+               <children>
+              <Label text="My sales" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                <font>
+                  <Font size="18.0" />
+                </font>
+              </Label>
+            <Button mnemonicParsing="false" onAction="#goToAddSaleScreen" text="Add sale" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane>
+               <children>
+                  <TableView fx:id="mySalesTableView" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                    <columns>
+                      <TableColumn fx:id="idTableColumn" sortable="true" text="id" />
+                      <TableColumn fx:id="securityNameTableColumn" sortable="true" text="security name" />
+                      <TableColumn fx:id="quantityTableColumn" sortable="true" text="quantity" />
+                      <TableColumn fx:id="priceTableColumn" sortable="true" text="price" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+      </children>
+      <padding>
+        <Insets />
+      </padding>
+    </VBox>
+  </children>
+</AnchorPane>
