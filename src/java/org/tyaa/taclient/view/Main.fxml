@@ -29,7 +29,7 @@
                   <Font size="18.0" />
                 </font>
               </Label>
-            <Button mnemonicParsing="false" onAction="#goToAddSaleScreen" text="Add sale" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+            <Button mnemonicParsing="false" onAction="#goToAddAvtScreen" text="Add sale" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
                </children>
             </AnchorPane>
             <AnchorPane>

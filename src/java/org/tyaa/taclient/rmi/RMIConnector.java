@@ -29,7 +29,7 @@ public class RMIConnector {
             //corbaname:iiop:1.2@192.168.1.124:3700
             p.setProperty(Context.INITIAL_CONTEXT_FACTORY, "com.sun.enterprise.naming.SerialInitContextFactory");
             //p.setProperty(Context.PROVIDER_URL, "corbaname:iiop:192.168.1.124:3700");
-            p.setProperty("org.omg.CORBA.ORBInitialHost", "91.196.229.101");
+            p.setProperty("org.omg.CORBA.ORBInitialHost", "10.0.2.15");
             p.setProperty("org.omg.CORBA.ORBInitialPort", "3700");
             mInitialContext = new InitialContext(p);
             //mInitialContext = new InitialContext();

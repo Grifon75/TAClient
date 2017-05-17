@@ -135,8 +135,8 @@ public class MainController implements Initializable, ControlledScreen {
     }
     
     @FXML
-    private void goToAddSaleScreen(ActionEvent event){
-       myController.setScreen(Main.addSaleID);
+    private void goToAddAvtScreen(ActionEvent event){
+       myController.setScreen(Main.addAvtID);
     }
     
 }

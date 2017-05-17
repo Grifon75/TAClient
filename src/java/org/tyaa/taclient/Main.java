@@ -26,6 +26,8 @@ public class Main extends Application
 {
     public static String mainID = "main";
     public static String mainView = "/org/tyaa/taclient/view/Main.fxml";
+    public static String addAvtID = "add_avt";
+    public static String addAvtView = "/org/tyaa/taclient/view/AddAvt.fxml";
     public static String addSaleID = "add_sale";
     public static String addSaleView = "/org/tyaa/taclient/view/AddSale.fxml";
 
@@ -62,8 +64,9 @@ public class Main extends Application
         ScreensController screensContainer = new ScreensController();
         //Добавляем в него представления главного окна и окна добавления продажи
         screensContainer.loadScreen(Main.mainID, Main.mainView);
+        screensContainer.loadScreen(Main.addAvtID, Main.addAvtView);
         screensContainer.loadScreen(Main.addSaleID, Main.addSaleView);
-        //Устанавливаем представление главного окна в качестве текуего
+        //Устанавливаем представление главного окна в качестве текущего
         screensContainer.setScreen(Main.mainID);
         //Создаем корневой контейнер, помещаем в него наш контейнер представлений,
         //на его базе - сцену, которую подключаем в главный стейдж и отображаем стейдж
